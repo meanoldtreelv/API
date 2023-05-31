@@ -45,6 +45,8 @@ tags:
     description: Operations about users.
   - name: Tag
     description: This is a tag description.
+  - name: Transcription
+    description: all api endpoints related to transcription
 servers:
   - url: https://{tenant}/api/v1
     variables:
@@ -61,6 +63,8 @@ paths:
     $ref: paths/pathItem.yaml
   /pathItemWithExamples:
     $ref: paths/pathItemWithExamples.yaml
+  /transcription:
+    $ref: pats/transcription.yaml
 components:
   securitySchemes:
     main_auth:
